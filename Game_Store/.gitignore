@@ -1,0 +1,31 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment folders
+.venv/
+venv/
+env/
+
+# Django-related files
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files (uncomment if needed)
+# media/
+# staticfiles/
+
+# Django migrations
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+
+# Bytecode-compiled and other automatically generated files
+*.pyc
+*.pyo
+*.pyd
+
+# Local environment settings
+.env

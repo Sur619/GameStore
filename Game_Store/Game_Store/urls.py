@@ -1,5 +1,5 @@
 """
-URL configuration for Game_Store project.
+URL configuration for GameStore project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,8 +16,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
 
 urlpatterns = [
+
+    path("store/", include("Store.urls")),
     path("admin/", admin.site.urls),
 ]
